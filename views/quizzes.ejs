@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,22 +5,14 @@
     <title>Quizzes</title>
 </head>
 <body>
-
-<h2>Ahora les mostramos la lista de quizzes</h2>
+<h2>Lista de Quizzes</h2>
 <p></p>
 <p>
-        <% for (var i in quizzes){%>
-            <li>
-                <%=quizzes[i].question%>: <%=quizzes[i].answer%>
-            </li>
-            <%}%>
+    <% for (var i in quizzes){%>
+        <li>
+            <%=quizzes[i].question%>: <%=quizzes[i].answer%>
+        </li>
+    <%}%>
 </p>
-
-<p>
-        <a href=/credits> Ir a credits</a>
-        <a href=/> Volver a home</a>
-
-</p>
-
 </body>
 </html>
